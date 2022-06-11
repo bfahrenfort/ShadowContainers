@@ -30,4 +30,4 @@ cmake --build .
 ```
 and then run ShadowTests.exe.
 
-`auto collection = Shadow{Array/Vector/etc}<varies>;`, then get shadows of the base with `auto shdw = collection.shadow();` and shadows of another shadow with `auto shdw1 = collection.shadow(shdw);`. Access base elements with `collection[index]`, and shadow elements with `collection(shdw, index)` (note the parenthesis instead of brackets).
+To use, add `auto collection = Shadow{Array/Vector/etc}<varies>;`, then get shadows of the base with `auto shdw = collection.shadow();` and shadows of another shadow with `auto shdw1 = collection.shadow(shdw);`. Access/set base elements with `collection[index]`, and shadow elements with `collection(shdw, index)` (note the parenthesis instead of brackets). Set shadow elements with `collection.set(shdw, index, value)`.
