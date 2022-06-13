@@ -1,4 +1,6 @@
 # Shadow Containers
+This project is a work in progress.
+
 An interesting collection of dynamic data structures for memory-efficient computing on a set of data.
 
 A Shadow container houses one set of data and an arbitrary number of 'shadows': effectively a modifiable version of the base data without copying it, and while retaining the original for later use.
